@@ -1,0 +1,101 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+:root {
+    --primary: #0f172a;       /* Slate 900 */
+    --accent: #3b82f6;        /* Modern Blue */
+    --accent-light: #dbeafe;
+    --text-main: #334155;
+    --glass: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Navbar */
+.navbar {
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.navbar.scrolled {
+    background: var(--glass);
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.navbar.scrolled .nav-link, .navbar.scrolled .navbar-brand {
+    color: var(--primary) !important;
+}
+
+/* Enhanced Hero */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background: radial-gradient(circle at top right, #e0e7ff, #ffffff);
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    color: var(--primary);
+}
+
+/* Pro Cards */
+.pro-card {
+    border: 1px solid rgba(0,0,0,0.03);
+    border-radius: 24px;
+    background: #ffffff;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pro-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+}
+
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    background: var(--accent-light);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.float-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+.btn-pro {
+    background: var(--primary);
+    color: white;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-pro:hover {
+    background: var(--accent);
+    color: white;
+    transform: scale(1.05);
+}
