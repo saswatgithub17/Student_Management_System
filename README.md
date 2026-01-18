@@ -2,8 +2,6 @@
 
 EduFlow Pro is a comprehensive, data-driven web application designed to streamline institutional management. It provides a centralized platform for administrators, faculty, and students to manage academics, finances, and communications in real-time.
 
-
-
 ## 🚀 Key Features
 
 ### **1. Administrative Hub**
@@ -23,8 +21,6 @@ EduFlow Pro is a comprehensive, data-driven web application designed to streamli
 * **Notification Center:** Real-time alert system (Bell Icon) for academic and fee updates.
 * **Performance Tracking:** Dynamic GPA calculation and fee payment progress bars.
 
-
-
 ## 🛠️ Tech Stack
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+), Bootstrap 5.3
 * **Backend:** PHP 8.x
@@ -36,4 +32,4 @@ EduFlow Pro is a comprehensive, data-driven web application designed to streamli
 
 1. **Clone the Repository**
    ```bash
-   git clone [https://github.com/your-username/eduflow-pro.git](https://github.com/your-username/eduflow-pro.git)
+   git clone [https://github.com/saswatgithub17/Student_Management_System.git](https://github.com/saswatgithub17/Student_Management_System.git)
